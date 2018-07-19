@@ -51,24 +51,7 @@ import QuartzCore
  Here are the implementations that I still have planned to make on this project. So if something is missing, it
  is probably here and in development:
  
- - BUG: When the back button is pressed quickly, there is a chance that the title is updated, but the view controller is not
- popped. This is not a major issue since this does not cause the code to crash, but still an issue that needs to be addressed.
- - Change the name of the icons to not include the league name in them, this is becuase I recently cconsidered the
- case where league == "ALL SPORTS". (For example, change the name of the celtics icon from "NBA BOS" to "Boston
- Celtics". I thought this way would be better but it just seems to cause more potential problems)
- - Update the app to support and be able to handle up to a 10 team parlay (shouldnt take too long since the
- screens just need to be added, the code that already exists should be able to support this)
- - Add time to the Game struct and make that display dynamically on the "Choose Line" Screen (Right now it is
- hardcoded)
- - Implement the wager-creator slide with the overall risk and reward values calculated for the user
- - Implement a submit button on the summary screen that is ready to send the currentBet object that is created to
- the backend in whatever format the backend needs
-    - Have this submit button also validate if the bet is okay (i.e. in a parlay, make sure no two bets are on
-    the same team)
- - Design the custom table cell for the dynamic SummaryCell to make the display of the lines in a bet much more
- appealing
- - Fix bug where clicking on a button on the "Choose Line" screen doesn't work when you click on the black bubble
- but outside of the text.
+    (Tasks have been importeed to asana)
  
  */
 
@@ -132,7 +115,13 @@ public var objectivesArray = ["Win 2 Bets",
                               "Win 10 Bets",
                               "Win 2 Team Parlay",
                               "Win 3 Team Parlay",
-                              "Win 4 Team Parlay"]
+                              "Win 4 Team Parlay",
+                              "Win 5 Team Parlay",
+                              "Win 6 Team Parlay",
+                              "Win 7 Team Parlay",
+                              "Win 8 Team Parlay",
+                              "Win 9 Team Parlay",
+                              "Win 10 Team Parlay"]
 
 // Mock Durations - I assume this should evetually be pulled from the backend
 public var durationsArray = ["Full Game",
